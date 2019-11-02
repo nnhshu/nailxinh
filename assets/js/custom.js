@@ -17,6 +17,32 @@
             smartSpeed: 250
         });
 
+        // Beauticans Slider
+        $(".beauticians-slider").owlCarousel({
+            items: 4,
+            loop: true,
+            dots: true,
+            nav: true,
+            margin:30,
+            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+            autoplay: true,
+            autoplayTimeout: 5000,
+            animateIn: 'fadeInUp',
+            animateOut: 'fadeInDown',
+            smartSpeed: 250,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        });
+
         // Header Slide items with animate.css
         var owl = $('.header-slider');
         owl.owlCarousel();
@@ -76,13 +102,13 @@
         // testimonial Carousel
         $(".testimonial-carousel").owlCarousel({
             loop: true,
-            dots: true,
+            dots: false,
             nav: true,
             navText: ['<i class="fa fa-long-arrow-alt-left"></i>', '<i class="fa fa-long-arrow-alt-right"></i>'],
             margin: 30,
             center: true,
             autoplay: true,
-            autoplayTimeout: 3000,
+            autoplayTimeout: 5000,
             responsive: {
                 0: {
                     items: 1

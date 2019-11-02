@@ -1375,6 +1375,7 @@ header {
 .service-box h4 {
     margin-top: 20px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .service-box p {
@@ -2078,6 +2079,7 @@ header {
     position: relative;
     width: 100%;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .single-beauticians .img-wrapper img {
@@ -2168,88 +2170,6 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
 }
-
-.single-beauticians:hover .img-wrapper,
-.single-beauticians:hover .beautician-content {
-    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1)
-}
-
-.single-beauticians:hover .img-wrapper {
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d
-}
-
-.single-beauticians:hover .beautician-content {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d
-}
-
-
-.single-beauticians .beautician-content .inner-content {
-    -webkit-perspective: inherit;
-            perspective: inherit;
-    -webkit-transform: translateY(0%) translateZ(60px) scale(0.94);
-    transform: translateY(0%) translateZ(60px) scale(0.94);
-}
-
-.single-beauticians .beautician-content p {
-    margin: 0;
-}
-
-.single-beauticians .beautician-content .inner-content {
-    padding: 7% 0
-}
-
-.single-beauticians .social li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.single-beauticians .social li a {
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    background: #fff;
-    display: block;
-    border-radius: 50%;
-    -webkit-transition: .3s;
-    transition: .3s;
-    overflow: hidden;
-}
-
-.single-beauticians .social li a:hover {
-    color: #fff;
-}
-
-.single-beauticians .social a:hover i {
-    -webkit-animation: socialFxD .3s forwards;
-            animation: socialFxD .3s forwards
-}
-
-@keyframes socialFxD {
-    49% {
-        -webkit-transform: translateX(100%);
-                transform: translateX(100%)
-    }
-    50% {
-        opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        -webkit-transform: translateX(-100%);
-                transform: translateX(-100%)
-    }
-    51% {
-        opacity: 1;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
-    }
-}
-
 
 .single-beauticians h5 {
     color: #fff;
@@ -3627,3 +3547,5 @@ canvas {
     background-size: cover;
     background-position: 50% 50%;
 }
+
+/* footer */
